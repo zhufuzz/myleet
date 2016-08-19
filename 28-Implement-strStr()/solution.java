@@ -5,6 +5,7 @@ public class Solution {
         }
         for (int i = 0; i < haystack.length() - needle.length() + 1; i++){
             int j = 0;
+            //pay attention!! j start with 0!!! not i!!!
             for (j = 0; j < needle.length(); j++){
                 if (haystack.charAt(i + j) != needle.charAt(j)){
                     break;
