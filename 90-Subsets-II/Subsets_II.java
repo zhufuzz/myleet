@@ -1,4 +1,4 @@
-public class Solution {
+public class Subsets_II {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
      List<List<Integer>> result = new ArrayList<>();
      if (nums == null || nums.length == 0){
