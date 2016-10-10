@@ -18,7 +18,7 @@ public class Solution {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
                     f[i][j] = f[i - 1][j - 1];
                 } else {
-                    f[i][j] = Math.min(Math.min(f[i - 1][j], f[i][j - 1]), f[i - 1][j - 1]) + 1;
+                    f[i][j] = Math.min(Math.min(f[i - 1][j], f[i][j - 1]), f[i - 1][j - 1]) +;
                 }
             }
         }
