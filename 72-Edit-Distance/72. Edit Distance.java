@@ -16,9 +16,9 @@ public class Solution {
         for (int i = 1; i < m + 1; i++) {
             for (int j = 1; j < n + 1; j++) {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
-                    f[i][j] = f[i - 1][j + 1] + 1;
+                    f[i][j] = f[i - 1][j + 1];
                 } else {
-                    f[i][j] = Math.max(Math.max(f[i - 1][j], f[i][j - 1]), f[i - 1][j - 1]);
+                    f[i][j] = Math.min(Math.min(f[i - 1][j], f[i][j - 1]), f[i - 1][j - 1]);
                 }
             }
         }
