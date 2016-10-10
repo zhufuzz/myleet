@@ -10,7 +10,7 @@ public class Solution {
         }
         
         for (int j = 0; j < n + 1; j++) {
-            f[0][j] = i;
+            f[0][j] = j;
         }
         
         for (int i = 0; i < m + 1; i++) {
